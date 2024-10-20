@@ -1,0 +1,116 @@
+* {
+box-sizing : border-box;
+margin : 0;
+padding : 0;
+}
+body {
+font-family : "Fjalla One", sans-serif;
+background-color : burlywood;
+}
+.background {
+position : fixed;
+top : 0;
+left : 0;
+width : 100%;
+height : 100%;
+background-image : url("backgroundTravelDestinations.jpg");
+background-size : cover;
+background-position : center;
+filter : brightness(80%);
+z-index : -1;
+}
+nav {
+display : flex;
+background-color : brown;
+align-items : center;
+justify-content : space-between;
+}
+.nav-links {
+padding : 28px 0;
+}
+.nav-links li {
+display : inline-block;
+margin : 0 15px;
+}
+.nav-links li a {
+text-decoration : none;
+font-family : "Fjalla One", sans-serif;
+color : white;
+padding : 5px 0;
+position : relative;
+}
+.nav-links li a::after {
+content : '';
+background-color : white;
+width : 0;
+height : 2px;
+position : absolute;
+bottom : 0;
+left : 0;
+transition : width 0.5s;
+}
+.nav-links li a:hover::after {
+width : 100%;
+}
+.content {
+max-width : 1200px;
+margin : 0 auto;
+padding : 20px;
+}
+.content h1 {
+text-align : center;
+margin : 20px 0;
+color : white;
+font-family : "Fjalla One", sans-serif;
+font-size : 50px;
+}
+h2 {
+font-size : 35px;
+}
+.content p {
+text-align : center;
+font-size : large;
+color : white;
+font-family : "Fjalla One", sans-serif;
+}
+a {
+text-decoration : none;
+color : inherit;
+}
+.container {
+display : flex;
+align-items : center;
+margin-top : 20px;
+background-color : white;
+border-radius : 8px;
+box-shadow : 0 2px 8px rgb(0, 0, 0, 0.1);
+overflow : hidden;
+transition : transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container:hover {
+transform : scale(1.05);
+box-shadow : 0 4px 12px rgb(0, 0, 0, 0.2);
+}
+.image {
+flex : 1;
+max-width : 300px;
+height : auto;
+}
+.text-box h1, .text-box h2 {
+margin : 0;
+color : #333;
+}
+.text-box {
+flex : 2;
+padding : 20px;
+display : flex;
+flex-direction : column;
+justify-content : center;
+align-items : center;
+text-align : center;
+}
+.text-box p {
+font-family : "Fjalla One", sans-serif;
+margin : 0;
+color : #333;
+}

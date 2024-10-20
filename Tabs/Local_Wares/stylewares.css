@@ -1,0 +1,176 @@
+* {
+box-sizing : border-box;
+margin : 0;
+padding : 0;
+}
+body {
+margin : 0;
+height : 100vh;
+overflow-x : hidden;
+}
+.background {
+position : fixed;
+top : 0;
+left : 0;
+width : 100%;
+height : 100%;
+background-image : url("backgroundLocalWares.jpg");
+background-size : cover;
+background-position : center;
+filter : brightness(80%);
+z-index : -1;
+}
+nav {
+display : flex;
+background-color : chocolate;
+align-items : center;
+justify-content : space-between;
+}
+.nav-links {
+padding : 28px 0;
+}
+.nav-links li {
+display : inline-block;
+margin : 0 15px;
+}
+.nav-links li a {
+text-decoration : none;
+font-family : "Fjalla One", sans-serif;
+color : white;
+padding : 5px 0;
+position : relative;
+}
+.nav-links li a::after {
+content : '';
+background-color : white;
+width : 0;
+height : 2px;
+position : absolute;
+bottom : 0;
+left : 0;
+transition : width 0.5s;
+}
+.nav-links li a:hover::after {
+width : 100%;
+}
+.content h1, .content p {
+text-align : center;
+font-family : "Fjalla One", sans-serif;
+color : white;
+}
+.content h1 {
+margin : 20px 0;
+font-size : 50px;
+}
+.content p {
+margin : 20px 0;
+font-size : large;
+}
+.section-container {
+display : flex;
+flex-direction : column;
+align-items : center;
+padding : 20px;
+font-family : "Fjalla One", sans-serif;
+}
+.rectangle {
+width : 80%;
+max-width : 800px;
+padding : 20px;
+margin : 10px auto;
+display : flex;
+flex-direction : column;
+border : #ccc solid 1px;
+border-radius : 8px;
+box-shadow : 2px 2px 10px rgb(0, 0, 0, 0.1);
+background-color : #f9f9f9;
+}
+.explanation {
+width : 100%;
+max-width : 800px;
+padding : 20px;
+margin : 10px auto;
+display : flex;
+flex-direction : column;
+border : #ccc solid 1px;
+border-radius : 8px;
+box-shadow : 2px 2px 10px rgb(0, 0, 0, 0.1);
+background-color : #f9f9f9;
+}
+.clickable-rectangle {
+text-decoration : none;
+display : block;
+color : black;
+}
+.rectangle h2 a, .rectangle p a {
+text-decoration : none;
+color : black;
+}
+.clickable-rectangle a {
+text-decoration : none;
+color : inherit;
+}
+.rectangle h2, .rectangle p {
+text-align : center;
+color : black;
+}
+.rectangle h2 {
+font-size : 30px;
+}
+.rectangle p {
+font-size : 20px;
+}
+.clickable-rectangle:hover {
+transform : scale(1.05);
+transition : transform 0.3s ease;
+}
+.video {
+background-color : #e9ecef;
+width : 100%;
+max-width : 600px;
+margin : 20px auto;
+border : #ccc solid 1px;
+border-radius : 8px;
+box-shadow : 2px 2px 10px rgb(0, 0, 0, 0.1);
+}
+.video iframe {
+width : 100%;
+height : 100%;
+border-radius : 8px;
+}
+.slideshow-container {
+position : relative;
+width : 700px;
+height : 500px;
+margin : 20px auto;
+overflow : hidden;
+}
+.mySlides {
+display : none;
+}
+.mySlides img {
+width : 100%;
+height : 100%;
+object-fit : cover;
+}
+.prev, .next {
+cursor : pointer;
+position : absolute;
+top : 50%;
+width : auto;
+padding : 16px;
+margin-top : -22px;
+color : white;
+font-weight : bold;
+font-size : 18px;
+transition : 0.6s ease;
+border-radius : 0 3px 3px 0;
+user-select : none;
+}
+.next {
+right : 0;
+border-radius : 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+background-color : rgb(0, 0, 0, 0.8);
+}
